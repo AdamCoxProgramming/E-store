@@ -1,0 +1,216 @@
+C:\Users\martin\PycharmProjects\Estore\venv\Scripts\python.exe C:/Users/martin/PycharmProjects/Estore/estore-sql/main.py
+--Weclome--
+Type 'back' at anytime to return to the previous state
+What type of user are you?(customer,admin,seller): admin
+--Administrator--
+Type either: 'manage listings' ,'manage promotions'
+What do you want to do?: manage listings
+--Product Listings--
+    There are no product listings
+Type either: 'add'
+What do you want to do?: add
+--Add Product Listing--
+What is the new products name?: Phone
+What are the products tags (comma sepereated, i.e phone,samsung,galaxy)?: phone,Phone,Smart,smart
+Phone added to the list of available products
+--Product Listings--
+All products:
+    Phone : phone,Phone,Smart,smart
+Type either: 'add'
+What do you want to do?: back
+--Administrator--
+Type either: 'manage listings' ,'manage promotions'
+What do you want to do?: manage promotions
+--Promotions--
+    There are no promotions
+Type either: 'add'
+What do you want to do?: add
+--Add Promotion--
+What is the new promotions code?: TEN
+What is the percentage discount? (type a number between 0 and 100):10
+'TEN' added to the list of promotions
+--Promotions--
+All promotions:
+    TEN
+Type either: 'add'
+What do you want to do?: back
+--Administrator--
+Type either: 'manage listings' ,'manage promotions'
+What do you want to do?: back
+--Weclome--
+Type 'back' at anytime to return to the previous state
+What type of user are you?(customer,admin,seller): customer
+--Customer Login--
+Do you have an account (y/n): back
+--Weclome--
+Type 'back' at anytime to return to the previous state
+What type of user are you?(customer,admin,seller): seller
+--Seller Login--
+Do you have an account (y/n): n
+Enter a name for your new account: Samsung
+Account Created
+--Samsung's Seller Account--
+Type either: 'view catalog' ,'view orders' ,'manage products' ,'delivery options'
+What do you want to do?: delivery options
+--Samsung's Delivery Options--
+The delivery options you provide are:
+    Standard, $0
+Type 'add' or 'back'add
+Name this new delivery option:Fast
+What price is this delivery option?:10
+Fast has been added as a delivery option
+--Samsung's Seller Account--
+Type either: 'view catalog' ,'view orders' ,'manage products' ,'delivery options'
+What do you want to do?: view catalog
+--Samsung's Seller Catalog--
+This seller has no products available
+type 'back'back
+--Samsung's Seller Account--
+Type either: 'view catalog' ,'view orders' ,'manage products' ,'delivery options'
+What do you want to do?: back
+--Weclome--
+Type 'back' at anytime to return to the previous state
+What type of user are you?(customer,admin,seller): seller
+--Seller Login--
+Do you have an account (y/n): y
+What is your account name: Samsung
+--Samsung's Seller Account--
+Type either: 'view catalog' ,'view orders' ,'manage products' ,'delivery options'
+What do you want to do?: manage products
+--Stock Management--
+Type either: 'add to catalog' ,'add stock'
+What do you want to do?: add to catalog
+--Add To Catalog--
+the products that can be sold on this site are:
+    Phone
+What is the name of the product you would like to sell?:Phone
+What price would you like to sell this product for:99
+What quantity of stock would you like to add?:100
+You have added Phone to your catalog
+--Stock Management--
+Type either: 'add to catalog' ,'add stock'
+What do you want to do?: add stock
+--Add Additional Product Stock--
+    Phone, $99, quantity in stock: 100
+What is the products name you want to add more stock for?Phone
+What quantity of stock would you like to add?:1
+1 more Phone stock added
+--Stock Management--
+Type either: 'add to catalog' ,'add stock'
+What do you want to do?: back
+--Samsung's Seller Account--
+Type either: 'view catalog' ,'view orders' ,'manage products' ,'delivery options'
+What do you want to do?: view catalog
+--Samsung's Seller Catalog--
+    Phone, $99, quantity in stock: 101
+type 'back'back
+--Samsung's Seller Account--
+Type either: 'view catalog' ,'view orders' ,'manage products' ,'delivery options'
+What do you want to do?: back
+--Weclome--
+Type 'back' at anytime to return to the previous state
+What type of user are you?(customer,admin,seller): customer
+--Customer Login--
+Do you have an account (y/n): n
+Enter a name for your new account: Adam
+Account Created
+--Adams Account--
+Type either: 'search products' ,'open basket' ,'view history'
+What do you want to do?: search products
+--Product Search--
+Type in keywords to search by: phone
+Search Results:
+    Phone : phone,Phone,Smart,smart
+Type 'view' product name, or type 'search' to start another search: view Phone
+--Viewing Phone--
+Phone is available from: 
+    Samsung - price: $99, stock remaining : 101
+type either 'order from name' or 'view *sellers name*': view Samsung
+--Samsung's Seller Catalog--
+    Phone, $99, quantity in stock: 101
+type 'back'back
+--Viewing Phone--
+Phone is available from: 
+    Samsung - price: $99, stock remaining : 101
+type either 'order from name' or 'view *sellers name*': order from Samsung
+A Phone from the seller Samsung has been added to your basket, proceed to the check out when you are ready
+--Product Search--
+Type in keywords to search by: back
+--Adams Account--
+Type either: 'search products' ,'open basket' ,'view history'
+What do you want to do?: open basket
+--Adams Basket--
+Items in basket:
+    Phone: $99, ordered from: Samsung
+type 'back' or 'checkout': checout
+type 'back' or 'checkout': checkout
+--Checkout--
+Please type your delivery address: Home Address
+Now select delivery options for your ordered products
+Delivery options for the Phone: 
+    Fast, $10
+    Standard, $0
+Type the name of the delivery option to use: Fast
+Do you want to use a promotional code (y/n): y
+Enter your promotion code: TEN
+Total price before promotion: $109
+Price after promotion code: $98.10000000000001
+What payment type do you want to use (credit,debit,paypal): credit
+Do you want to store this payment method for future use?(y,n): n
+Payment successful, you have ordered the products!
+--Adams Basket--
+Items in basket:
+    Basket empty
+type 'back' or 'checkout': back
+--Adams Account--
+Type either: 'search products' ,'open basket' ,'view history'
+What do you want to do?: view history
+--Customer Purchase History--
+Orders:
+order ID: 1, items: { $99 , quantity: 101, vendorId: 1, productId: 1 , status: Awaiting Shipment }
+Type 'back' when done: back
+--Adams Account--
+Type either: 'search products' ,'open basket' ,'view history'
+What do you want to do?: back
+--Customer Login--
+Do you have an account (y/n): back
+--Weclome--
+Type 'back' at anytime to return to the previous state
+What type of user are you?(customer,admin,seller): seller
+--Seller Login--
+Do you have an account (y/n): y
+What is your account name: Samsung
+--Samsung's Seller Account--
+Type either: 'view catalog' ,'view orders' ,'manage products' ,'delivery options'
+What do you want to do?: view orders
+--Customer Orders--
+    orderID:1 Adam ordered a Phone, delivery option: Standard
+Type 'back' or 'notify shipped'  notify shipped
+What is the orderID of the shipped product?:1
+order 1s shipment has been notified
+--Samsung's Seller Account--
+Type either: 'view catalog' ,'view orders' ,'manage products' ,'delivery options'
+What do you want to do?: back
+--Weclome--
+Type 'back' at anytime to return to the previous state
+What type of user are you?(customer,admin,seller): customer
+--Customer Login--
+Do you have an account (y/n): y
+What is your username: Adam
+--Adams Account--
+Type either: 'search products' ,'open basket' ,'view history'
+What do you want to do?: view history
+--Customer Purchase History--
+Orders:
+order ID: 1, items: { $99 , quantity: 100, vendorId: 1, productId: 1 , status: Shipped }
+Type 'back' when done: back
+--Adams Account--
+Type either: 'search products' ,'open basket' ,'view history'
+What do you want to do?: back
+--Customer Login--
+Do you have an account (y/n): back
+--Weclome--
+Type 'back' at anytime to return to the previous state
+What type of user are you?(customer,admin,seller): back
+
+Process finished with exit code 0
